@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Email-validation-javascript</title>
+    <script>
+        var n, c = 0;
+        function valid_email() {
+            n = t1.value;
+            c = 0;
+            for (var i = 0; i < n.length; i++) {
+                if (n.charAt(i) == '@')
+                    c++;
+            }
+            if (n.indexOf('@') == 0 || n.indexOf('@') == (n.length - 1))
+                alert("Invalid Email misplaced @[Begin Or End]");
+            else if (n.index - of("@") == -1)
+                alert("Plz Include @ Symbol");
+
+            else if (n.index - of(".com") == -1)
+                alert("Plz Include Domain name(.com)");
+
+            else if (c > 1)
+                alert("This is a valid Email...!!");
+            else
+                alert("success your email validation Congratulation!!!...")
+        }
+    </script>
+</head>
+
+<body>
+    <input type="text" name="t1" id="t1" placeholder="Example@gmail.com">
+    <input type="button" value="validate" onclick="valid_email();">
+</body>
+
+</html>

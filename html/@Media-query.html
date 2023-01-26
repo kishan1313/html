@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .cards {
+            text-align: center;
+        }
+
+        .cards.card {
+            height: 200px;
+            width: 22%;
+            border: 1px;
+            text-align: center;
+            margin: 2px;
+            background-color: orange;
+            font-size: 30px;
+            line-height: 200px;
+            display: inline-block;
+        }
+
+        @media screen and(max-width:700px) {
+            .cards.card {
+                width: 44%;
+                background-color: black;
+            }
+        }
+
+        @media screen and(max-width:500px) {
+            .cards.card {
+                width: 88%;
+                background-color: azure;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cards">
+        <div class="card">One</div>
+        <div class="card">Two</div>
+        <div class="card">Three</div>
+        <div class="card">Four</div>
+    </div>
+</body>
+
+</html>

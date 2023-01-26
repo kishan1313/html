@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!-- saved from url=(0068)file:///C:/Users/kisha/Desktop/development/html/ReciptGenration.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>Document</title>
+<script>
+    var price, quant, total, dis;
+    function calk() {
+
+        price = parseInt(p.value);
+        quant = parseInt(q.value);
+        if (type.value == "0" && type1.value == "0") {
+            alert("not allaud");
+        } else {
+            total = prise * quant;
+            to.value = total;
+            var gst = quant * price + (quant * prise / 10);
+            if (type1.value == "1" && type.value == "1")
+                dis = total + gst - (total + gst * 10 / 100);
+            else if (type1.value == "2" && type.value == "2")
+                dis = total + gst - (total + gst * 18 / 100);
+            amt.value = dis;
+        }
+    }
+
+</script></head>
+
+
+<body>
+    <table border="10px" align="center">
+        <tbody><tr>
+            <th style="background-color:orange">
+                <h3 style="background-color:red">Receipt Generation</h3>
+                Product:-<select name="type" id="type" onchange="calk()">
+                    <option value="0">Plz Select--</option>
+                    <option value="1">Shoes</option>
+                    <option value="1">T-shirt</option>
+                    <option value="1">Shirt</option>
+                    <option value="2">Jacket</option>
+                    <option value="2">Blazer</option>
+                    <option value="2">Jeans(AC)</option>
+                    <option value="2">Fan</option>
+                    <option value="2">Adopter</option>
+                    <option value="2">Air condition(AC)</option>
+                    <option value="2">Air cooler</option>
+                    <option value="2">Refrigerator</option>
+                    <option value="2">Washing Machine</option>
+                </select><br><br>
+                Type:-<select id="type1" name="type1" onchange="calk()">
+                    <option value="0">Plz Select--</option>
+                    <option value="1">Daily</option>
+                    <option value="2">Electronics</option>
+                </select><br><br>
+                Price:-<input type="text" id="p" name="p"><br><br>
+                Quantity:-<input type="text" id="q" name="q"><br><br>
+                Total:-<input type="text" id="to" name="to"><br><br>
+                GST%-Price:-<input type="text" id="g" name="g" value="10%" readonly=""><br><br>
+                Discount-Price:-<input type="text" id="d" name="d" value="Daily-10%,Electronics-18%" readonly=""><br><br>
+                Paid-Amount:-<input type="text" id="amt" name="amt"><br><br>
+                <input type="button" value="Click-on" onclick="calk()">
+            </th>
+        </tr>
+    </tbody></table>
+
+
+</body></html>

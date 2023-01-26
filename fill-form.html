@@ -1,0 +1,234 @@
+<html>
+
+<head>
+	<title>First Webpage</title>
+	<style>
+		.container {
+			height: 100%;
+			width: 100%;
+			margin: 0;
+			padding: 0;
+			position: relative;
+		}
+
+		.sub-container {
+			width: 60%;
+			margin: auto;
+			border: 2px solid #ddd;
+			padding: 20px;
+			border-radius: 10px;
+		}
+
+		.form-control {
+			margin-bottom: 10px;
+			display: flex;
+			width: 100%;
+		}
+
+		.form-control>div {
+			width: 50%;
+		}
+
+		.action {
+			width: 100%;
+			text-align: center;
+			margin: 30px 0 0;
+		}
+
+		@media screen and (max-width: 600px) {
+			.form-control {
+				margin-bottom: 10px;
+				width: 100%;
+				display: block;
+			}
+
+			.form-control>div {
+				width: 100%;
+			}
+
+			.form-control div:first-child {
+				margin-bottom: 10px;
+			}
+		}
+
+		.center {
+			text-align: center;
+		}
+
+		input[type='text'],
+		select,
+		textarea {
+			width: 100%;
+			border: 1px solid blueviolet;
+			border-radius: 3px;
+		}
+
+		input[type='text'],
+		select {
+			height: 26px;
+		}
+
+		input[type='text']:focus,
+		select:focus,
+		textarea {
+			outline: none !important;
+		}
+
+		button {
+			height: 30px;
+			border: 0;
+			color: white;
+			background: black;
+			border-radius: 4px;
+			padding: 0 20px;
+			cursor: pointer;
+		}
+	</style>
+	<script>
+		function valid_student() {
+			var frm = document.stu_form;
+			if (frm.n.value == "") {
+				alert("Enter student name");
+				frm.n.focus();
+				return false;
+			}
+			if (frm.f.value == "") {
+				alert("Enter Father name");
+				frm.f.focus();
+				return false;
+			}
+			if (frm.m.value == "") {
+				alert("Enter Mother name");
+				frm.m.focus();
+				return false;
+			}
+			if (frm.p.value == "") {
+				alert("Enter student Mobile Number");
+				frm.p.focus();
+				return false;
+			}
+
+			if (frm.p.value.length < 10) {
+				alert("Enter 10 digits phone number");
+				frm.p.focus();
+				return false;
+			}
+			if (frm.g[0].checked == false && frm.g[1].checked == false) {
+				alert("Select Gender");
+				frm.g[0].focus();
+				return false;
+			}
+			if (frm.a.value == "") {
+				alert("Enter The Adrress");
+				frm.a.focus();
+				return false;
+			}
+			if (frm.c.value == "0") {
+				alert("Select Course");
+				frm.c.focus();
+				return false;
+			}
+			var frm_len = frm.element.length;
+			var chk = false;
+			for (var i = 0; i < frm_len; i++) {
+				if (frm.elements[i].type == "chechbox" && frm.elements[i].name == "q[]") {
+					if (frm.elements[i].checked == true) {
+						chk = true;
+						break;
+					}
+				}
+			}
+			if (chk == false) {
+				alert("Select Qalification");
+				return false;
+			}
+			if (frm.f1.value == "") {
+				alert("Select your Image");
+				frm.f1.focus();
+				return false;
+			}
+			return true;
+		}
+	</script>
+	<style>
+
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<h1 class="center">Student Registration Form</h1>
+
+		<form action="welcome.html" name="stu_form" id="stu_form" method="post" enctype="multiform/form data"
+			onsubmit="return valid_student();">
+			<div class="sub-container">
+				<div class="form-control">
+					<div><label for="name">Enter student name: </label></div>
+					<div> <input type="text" name="name" id="name" value="" placeholder="Enter student name" /></div>
+				</div>
+				<div class="form-control">
+					<div><label for="fatherName">Enter father name: </label></div>
+					<div> <input type="text" name="fatherName" id="fatherName" value=""
+							placeholder="Enter father name" /></div>
+				</div>
+				<div class="form-control">
+					<div><label for="motherName">Enter mother name:</label></div>
+					<div> <input type="text" name="motherName" id="motherName" value=""
+							placeholder="Enter mother name" /></div>
+				</div>
+				<div class="form-control">
+					<div><label for="phone">Enter phone number:</label></div>
+					<div> <input type="text" name="phone" id="phone" value="" placeholder="Enter phone number" /></div>
+				</div>
+				<div class="form-control">
+					<div><label>Please select gender:</label></div>
+					<div>
+						<label for="male">Male</label>
+						<input type="radio" name="gender" id="male" />
+						<label for="female">Female</label>
+						<input type="radio" name="gender" id="female" />
+					</div>
+				</div>
+				<div class="form-control">
+					<div><label for="address">Address</label></div>
+					<div><textarea name="address" id="address" cols="22" rows="4"> </textarea></div>
+				</div>
+				<div class="form-control">
+					<div><label for="course">Please select course</label></div>
+					<div>
+						<select id="course" name="course">
+							<option value="BCA">BCA</option>
+							<option value="MCA">MCA</option>
+							<option value="PGDCA">PGDCA</option>
+							<option value="MBA">MBA</option>
+						</select>
+					</div>
+
+				</div>
+
+				<div class="form-control">
+					<div><label for="qualification">Qualification</label></div>
+					<div>
+						<label><input type="checkbox" name="highSchool" id="highSchool" value="10th" />10th</label>
+						<label></label><input type="checkbox" name="interMediate" id="interMediate"
+							value="12th" />12th</label>
+						<label></label><input type="checkbox" name="bca" id="bca" value="BCA" />BCA</label>
+						<label></label><input type="checkbox" name="mca" id="mca" value="MCA" />MCA</label>
+					</div>
+				</div>
+
+				<div class="form-control">
+					<div><label for="photo">Please select photo</label></div>
+					<div> <input type="file" value="Select photo..." /></div>
+				</div>
+
+				<div class="action">
+					<button type="submit">Send Information</button>
+					<button type="reset">Clear</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</body>
+
+</html>

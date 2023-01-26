@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Example-javascript</title>
+    <script>
+        function check_limit() {
+            limit.value = 100 - tr.value.length;
+            if (parseInt(limit.value) < 0) {
+                tr.disable = true;
+                limit.value = 0;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    Feedback(max:100 Char):<textarea name="tr" id="tr" rows="5" cols="30" onkeyup="check_limit();"></textarea><br>
+    Remaining:<input type="text" readonly name="limit" id="limit" size="5" value="100">
+</body>
+
+</html>

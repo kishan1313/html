@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Down Payment Calculator</title>
+    <meta name="description"
+        content="Free down payment calculator to find the amount of upfront cash needed, down payment percentage, or an affordable home price based on 3 potential situations." />
+    <link rel="stylesheet" href="/style.css" />
+    <script src="//d26tpo4cm8sb6k.cloudfront.net/js/common.js" async></script>
+    <link rel="canonical" href="https://www.calculator.net/down-payment-calculator.html" />
+    <link rel="apple-touch-icon" sizes="180x180" href="//d26tpo4cm8sb6k.cloudfront.net/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="//d26tpo4cm8sb6k.cloudfront.net/icon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="//d26tpo4cm8sb6k.cloudfront.net/icon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+</head>
+
+<body>
+    <div id="headerout">
+        <div id="header">
+            <div id="logo"><a href="/"><img src="//d26tpo4cm8sb6k.cloudfront.net/img/svg/calculator-white.svg"
+                        width="208" height="22"></a></div>
+        </div>
+    </div>
+    <div id="clear"></div>
+    <div id="contentout">
+        <div id="content">
+            <div id="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList"><span
+                    itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/"
+                        itemprop="item"><span itemprop="name">home</span></a>
+                    <meta itemprop="position" content="1" />
+                </span> / <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a
+                        href="/financial-calculator.html" itemprop="item"><span itemprop="name">financial</span></a>
+                    <meta itemprop="position" content="2" />
+                </span> / <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a
+                        href="/down-payment-calculator.html" itemprop="item"><span itemprop="name">down payment
+                            calculator</span></a>
+                    <meta itemprop="position" content="3" />
+                </span></div>
+            <h1>Down Payment Calculator</h1>
+
+            <h2 class="h2red">Use the Upfront Cash Available</h2>
+            <p>If the amount of upfront cash available and down payment percentages are known, use the calculator below
+                to calculate an estimate for an affordable home price.</p>
+
+            <table>
+                <tr>
+                    <td valign="top">
+                        <table id="calinputtable" class="panel">
+                            <form action="/down-payment-calculator.html#knowdownpayment">
+                                <tr>
+                                    <td>Upfront Cash Available</td>
+                                    <td><input type="text" name="ccashamount1" id="ccashamount1" value="50000"
+                                            class="inhalf indollar"></td>
+                                </tr>
+                                <tr>
+                                    <td>Down Payment</td>
+                                    <td><input type="text" name="cdownpaypct1" id="cdownpaypct1" value="20"
+                                            class="inhalf inpct"></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <div><label for="cincludeclosingcost1" class="cbcontainer"><input
+                                                    type="checkbox" name="cincludeclosingcost1"
+                                                    id="cincludeclosingcost1" value="1" checked /><span
+                                                    class="cbmark"></span>Include Closing Costs</label> <input
+                                                type="text" name="cclosingcost1" id="cclosingcost1" value="3"
+                                                class="in4char"> <select name="cclosingcostunit1">
+                                                <option value="p" selected>%</option>
+                                                <option value="d">$</option>
+                                            </select></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Interest Rate</td>
+                                    <td><input type="text" name="cinterest1" id="cinterest1" value="6.56"
+                                            class="inhalf inpct"></td>
+                                </tr>
+                                <tr>
+                                    <td>Loan Term</td>
+                                    <td><input type="text" name="cloanterm1" id="cloanterm1" value="30"
+                                            class="inhalf inuiyear"><span class="inuiyearspan">years</span></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" align="center" style="padding: 5px;"><input type="hidden"
+                                            name="type" value="1"><input type="image"
+                                            src="//d26tpo4cm8sb6k.cloudfront.net/img/svg/calculate.svg"
+                                            value="Calculate" alt="Calculate"></td>
+                                </tr>
+                            </form>
+                        </table>
+                    </td>
+                    <td width="20">&nbsp;</td>
+                    <td valign="top">
+                        <a name="knowdownpayment"></a>
+                        <h2 class="h2result">Home Price: $217,391</h2><br>
+                        <table class="cinfoT" align="center">
+                            <tr align="right">
+                                <td>Home Price</td>
+                                <td class="cinfoBodL"><b>$217,391</b></td>
+                            </tr>
+                            <tr align="right">
+                                <td>Down Payment</td>
+                                <td class="cinfoBodL"><b>$43,478</b></td>
+                            </tr>
+                            <tr align="right">
+                                <td>Closing Costs</td>
+                                <td class="cinfoBodL"><b>$6,522</b></td>
+                            </tr>
+                            <tr align="right">
+                                <td>Loan Amount</td>
+                                <td class="cinfoBodL"><b>$173,913</b></td>
+                            </tr>
+                            <tr align="right">
+                                <td>Monthly Payment</td>
+                                <td class="cinfoBodL"><b>$1,106</b></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <p><b>Results for Other Possible Down Payment Percentages</b></p>
+            <table class="cinfoT">
+                <tr align="center">
+                    <td class="cinfoHd"><b>Down Payment <br> Percentages</b></td>
+                    <td class="cinfoHdL"><b>3.5% (FHA)</b></td>
+                    <td class="cinfoHdL"><b>5%</b></td>
+                    <td class="cinfoHdL"><b>10%</b></td>
+                    <td class="cinfoHdL"><b>15%</b></td>
+                    <td class="cinfoHdL"><b>20%</b></td>
+                </tr>
+                <tr align="right">
+                    <td>Home Price</td>
+                    <td class="cinfoBodL">$769,231</td>
+                    <td class="cinfoBodL">$625,000</td>
+                    <td class="cinfoBodL">$384,615</td>
+                    <td class="cinfoBodL">$277,778</td>
+                    <td class="cinfoBodL">$217,391</td>
+                </tr>
+                <tr align="right">
+                    <td>Down Payment</td>
+                    <td class="cinfoBodL">$26,923</td>
+                    <td class="cinfoBodL">$31,250</td>
+                    <td class="cinfoBodL">$38,462</td>
+                    <td class="cinfoBodL">$41,667</td>
+                    <td class="cinfoBodL">$43,478</td>
+                </tr>
+                <tr align="right">
+                    <td>Closing Costs</td>
+                    <td class="cinfoBodL">$23,077</td>
+                    <td class="cinfoBodL">$18,750</td>
+                    <td class="cinfoBodL">$11,538</td>
+                    <td class="cinfoBodL">$8,333</td>
+                    <td class="cinfoBodL">$6,522</td>
+                </tr>
+                <tr align="right">
+                    <td>Loan Amount</td>
+                    <td class="cinfoBodL">$742,308</td>
+                    <td class="cinfoBodL">$593,750</td>
+                    <td class="cinfoBodL">$346,154</td>
+                    <td class="cinfoBodL">$236,111</td>
+                    <td class="cinfoBodL">$173,913</td>
+                </tr>
+                <tr align="right">
+                    <td>Monthly Payment</td>
+                    <td class="cinfoBodL">$4,721</td>
+                    <td class="cinfoBodL">$3,776</td>
+                    <td class="cinfoBodL">$2,202</td>
+                    <td class="cinfoBodL">$1,502</td>
+                    <td class="cinfoBodL">$1,106</td>
+                </tr>
+            </table>
+
+            <div style="padding:10px 0px;text-align:center;">
+            </div>
+
+
+            <h2 class="h2red"><br>Use the Home Price</h2>
+            <p>If the home price and down payment percentages are known, use the calculator below to calculate an
+                estimate for an amount needed in cash available for upfront costs.</p>
+
+            <table>
+                <tr>
+                    <td valign="top">
+                        <table id="calinputtable" class="panel">
+                            <form action="/down-payment-calculator.html#knowhomeprice">
+                                <tr>
+                                    <td>Home Price</td>
+                                    <td><input type="text" name="c2homeprice" id="c2homeprice" value="200000"
+                                            class="inhalf indollar"></td>
+                                </tr>
+                                <tr>
+                                    <td>Down Payment</td>
+                                    <td><input type="text" name="c2downpaypct" id="c2downpaypct" value="20"
+                                            class="inhalf inpct"></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <div><label for="c2includeclosingcost" class="cbcontainer"><input
+                                                    type="checkbox" name="c2includeclosingcost"
+                                                    id="c2includeclosingcost" value="1" checked /><span
+                                                    class="cbmark"></span>Include Closing Costs</label> <input
+                                                type="text" name="c2closingcost" id="c2closingcost" value="3"
+                                                class="in4char"> <select name="c2closingcostunit">
+                                                <option value="p" selected>%</option>
+                                                <option value="d">$</option>
+                                            </select></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Interest Rate</td>
+                                    <td><input type="text" name="c2interest" id="c2interest" value="6.56"
+                                            class="inhalf inhalf"></td>
+                                </tr>
+                                <tr>
+                                    <td>Loan Term</td>
+                                    <td><input type="text" name="c2loanterm" id="c2loanterm" value="30"
+                                            class="inhalf inuiyear"><span class="inuiyearspan">years</span></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" align="center" style="padding: 5px;"><input type="hidden"
+                                            name="type" value="2"><input type="image"
+                                            src="//d26tpo4cm8sb6k.cloudfront.net/img/svg/calculate.svg"
+                                            value="Calculate" alt="Calculate"></td>
+                                </tr>
+                            </form>
+                        </table>
+                    </td>
+                    <td width="20">&nbsp;</td>
+                    <td valign="top">
+                        <a name="knowhomeprice"></a>
+                        <h2 class="h2result">Cash Needed: $46,000</h2><br>
+                        <table class="cinfoT" align="center">
+                            <tr align="right">
+                                <td>Down Payment</td>
+                                <td class="cinfoBodL"><b>$40,000</b></td>
+                            </tr>
+                            <tr align="right">
+                                <td>Closing Costs</td>
+                                <td class="cinfoBodL"><b>$6,000</b></td>
+                            </tr>
+                            <tr align="right">
+                                <td>Down Payment + Closing Costs</td>
+                                <td class="cinfoBodL"><b>$46,000</b></td>
+                            </tr>
+                            <tr align="right">
+                                <td>Loan Amount</td>
+                                <td class="cinfoBodL"><b>$160,000</b></td>
+                            </tr>
+                            <tr align="right">
+                                <td>Monthly Payment</td>
+                                <td class="cinfoBodL"><b>$1,018</b></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+
+
+            <h2 class="h2red"><br>Use the Home Price and Upfront Cash Available</h2>
+            <p>If the home price and amount of upfront cash available are known, use the calculator below to calculate
+                an estimate for a down payment percentage.</p>
+            <table>
+                <tr>
+                    <td valign="top">
+                        <table id="calinputtable" class="panel">
+                            <form action="/down-payment-calculator.html#knowdownandhomeprice">
+                                <tr>
+                                    <td>Home Price</td>
+                                    <td><input type="text" name="c3homeprice" id="c3homeprice" value="200000"
+                                            class="inhalf indollar"></td>
+                                </tr>
+                                <tr>
+                                    <td>Upfront Cash Available</td>
+                                    <td><input type="text" name="c3downpaypct" id="c3downpaypct" value="50000"
+                                            class="inhalf indollar"></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <div><label for="c3includeclosingcost" class="cbcontainer"><input
+                                                    type="checkbox" name="c3includeclosingcost"
+                                                    id="c3includeclosingcost" value="1" checked /><span
+                                                    class="cbmark"></span>Include Closing Costs</label> <input
+                                                type="text" name="c3closingcost" id="c3closingcost" value="3"
+                                                class="in4char"> <select name="c3closingcostunit">
+                                                <option value="p" selected>%</option>
+                                                <option value="d">$</option>
+                                            </select></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Interest Rate</td>
+                                    <td><input type="text" name="c3interest" id="c3interest" value="6.56"
+                                            class="inhalf inpct"></td>
+                                </tr>
+                                <tr>
+                                    <td>Loan Term</td>
+                                    <td><input type="text" name="c3loanterm" id="c3loanterm" value="30"
+                                            class="inhalf inuiyear"><span class="inuiyearspan">years</span></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" align="center" style="padding: 5px;"><input type="hidden"
+                                            name="type" value="3"><input type="image"
+                                            src="//d26tpo4cm8sb6k.cloudfront.net/img/svg/calculate.svg"
+                                            value="Calculate" alt="Calculate"></td>
+                                </tr>
+                            </form>
+                        </table>
+                    </td>
+                    <td width="20">&nbsp;</td>
+                    <td valign="top">
+                        <a name="knowdownandhomeprice"></a>
+                        <h2 class="h2result">Down Payment: 22.0%</h2><br>
+                        <table class="cinfoT" align="center">
+                            <tr align="right">
+                                <td>Down Payment</td>
+                                <td class="cinfoBodL"><b>$44,000</b></td>
+                            </tr>
+                            <tr align="right">
+                                <td>Down Payment Percentage</td>
+                                <td class="cinfoBodL"><b>22.0%</b></td>
+                            </tr>
+                            <tr align="right">
+                                <td>Closing Costs</td>
+                                <td class="cinfoBodL"><b>$6,000</b></td>
+                            </tr>
+                            <tr align="right">
+                                <td>Loan Amount</td>
+                                <td class="cinfoBodL"><b>$156,000</b></td>
+                            </tr>
+                            <tr align="right">
+                                <td>Monthly Payment</td>
+                                <td class="cinfoBodL"><b>$992</b></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <p>
+            <fieldset>
+                <legend>Related</legend><a href="/mortgage-calculator.html">Mortgage Calculator</a> | <a
+                    href="/house-affordability-calculator.html">House Affordability Calculator</a>
+            </fieldset>
+            </p>
+            <br>
+            <h3>What is a Down Payment?</h3>
+            <p>A down payment is the upfront portion of a payment that is often required to finalize the purchase of
+                items that are typically more expensive, such as a home or a car. When purchasing a home, after a down
+                payment is paid by a home-buyer, any remaining balance will be amortized as a mortgage loan that must be
+                fulfilled by the buyer. In other words, the purchase price of a house should equal the total amount of
+                the mortgage loan and the down payment. Often, a down payment for a home is expressed as a percentage of
+                the purchase price. As an example, for a $250,000 home, a down payment of 3.5% is $8,750, while 20% is
+                $50,000.</p>
+
+            <h3>Closing Costs</h3>
+            <p>It is important to remember that a down payment only makes up one upfront payment during a home purchase,
+                even though it is often the most substantial. There are also many other costs that may be involved, such
+                as upfront points of the loan, insurance, lender's title insurance, inspection fee, appraisal fee, and a
+                survey fee. A very rough estimate for the amount needed to cover closing costs is 3% of the purchase
+                price, which is set as the default for the calculator.</p>
+
+            <h3>Different Loans, Different Down Payment Requirements</h3>
+            <p>In the U.S., most conventional loans adhere to guidelines and requirements set by Freddie Mac and Fannie
+                Mae, which are two government-sponsored corporations that purchase loans from lenders. Conventional
+                loans normally require a down payment of 20%, but some lenders may go lower, such as 10%, 5%, or 3% at
+                the very least. If the down payment is lower than 20%, borrowers will be asked to purchase Private
+                Mortgage Insurance (PMI) to protect the mortgage lenders. The PMI is normally paid as a monthly fee
+                added to the mortgage until the balance of the loan falls below 80 or 78% of the home purchase price.
+            </p>
+            <p>To help low-income buyers in the U.S., the Department of Housing and Urban Development (HUD) requires all
+                Federal Housing Administration (FHA) loans to provide insurance to primary residence home-buyers so that
+                they can purchase a home with a down payment as low as 3.5% and for terms as long as 30 years. However,
+                home-buyers must pay an upfront mortgage insurance premium at closing that is worth 1.75% of the loan
+                amount, on top of the down payment. In addition, monthly mortgage insurance payments last for the life
+                of the loan unless refinanced to a conventional loan. For more information about or to do calculations
+                involving FHA loans, please visit the <a href="/fha-loan-calculator.html">FHA Loan Calculator</a>.</p>
+            <p>Also, in the U.S., the Department of Veterans Affairs (VA) has the ability to subsidize VA loans, which
+                do not require a down payment. Only two other entities, the USDA and Navy Federal, allow the purchase of
+                a home without a down payment. For more information about or to do calculations involving VA mortgages,
+                please visit the <a href="/va-mortgage-calculator.html">VA Mortgage Calculator</a>.</p>
+
+            <h3>Large vs. Small Down Payment</h3>
+            <p>Paying a larger down payment of 20% or more, if possible, usually lead to qualification for lower rates.
+                Therefore a larger down payment will generally result in the lower amount paid on interest for borrowed
+                money. For conventional loans, paying at least a 20% down payment when purchasing a home removes the
+                need for Private Mortgage Insurance (PMI) payments, which are sizable monthly fees that add up over
+                time.</p>
+            <p>One of the risks associated with making a larger down payment is the possibility of a recession. In the
+                case of a recession, the home value will likely drop, and with it, the relative return on investment of
+                the larger down payment.</p>
+            <p>Making a smaller down payment also has its benefits, the most obvious being a smaller amount due at
+                closing. Generally, there are a lot of different opportunity costs involved with the funds being used
+                for a down payment; the funds used to make a down payment can't be used to make home improvements to
+                raise the value of the home, pay off high-interest debt, save for retirement, save for an emergency
+                fund, or invest for a chance at a higher return.</p>
+            <p>Down payment size is also important to lenders; generally, lenders prefer larger down payments. This is
+                because big down payments lower risk by protecting them against the various factors that might reduce
+                the value of the purchased home. In addition, borrowers risk losing their down payment if they can't
+                make payments on a home and end up in foreclosure. As a result, down payments act as an incentive for
+                borrowers to make their mortgage payments, which reduces the risk of default.</p>
+
+            <h3>Where to Get Down Payment Funds</h3>
+            <p><b>Savings</b>&mdash;Most home-buyers save up for their down payments by setting aside savings until they
+                reach their desired target, whether it's 20% or 3.5%. Having the savings in an interest-bearing account
+                such as a savings account or in Certificates of Deposit (CDs) can provide the opportunity to earn some
+                interest. Although placing down payment savings in higher risk investments such as stocks or bonds can
+                be more profitable, it is also riskier. For more information about or to do calculations involving
+                savings, please visit the <a href="/savings-calculator.html">Savings Calculator</a>. For more
+                information about or to do calculations involving CDs, please visit the <a href="/cd-calculator.html">CD
+                    Calculator</a>.</p>
+            <p><b>Piggyback Loan</b>&mdash;In situations where the home-buyer doesn't have sufficient funds to make the
+                required down payment for a home purchase, they can try to split their mortgage into two loans. A
+                piggyback mortgage is when two separate loans are taken out for the same home. Generally, the first
+                mortgage is set at 80% of the home's value and the second loan is for 10%. The remaining 10% comes from
+                the home-buyer's savings as a down payment. This is also called an 80-10-10 loan. Home-buyers may use
+                piggyback mortgages to avoid PMI or jumbo financing.</p>
+            <p><b>Down Payment Assistance Programs</b>&mdash;Local county or city governments, local housing
+                authorities, and charitable foundations sometimes provide grants to first-time home-buyers. State-wide
+                programs can be found on the HUD website. Down payment assistance is usually only reserved for
+                need-based applicants purchasing a primary residence. Grants can come in the form of money applied to a
+                down payment or an interest-free loan meant to supplement a main mortgage. Applicants usually still need
+                to have decent credit and documented income. Grants may need to be repaid if the home is sold.</p>
+            <p><b>Gift Funds</b>&mdash;FHA loans allow for the down payment to be a gift from a friend or family member,
+                and the entire down payment can be considered a gift as long as there is a gift letter stating that it
+                is a gift that does not require repayment.</p>
+            <p><b>IRA</b>&mdash;The principal contributed to a Roth IRA (individual retirement account) can be withdrawn
+                without penalty or tax. In contrast, contributions from a traditional IRA will be subject to regular
+                income tax as well as a 10% penalty if the contributions are withdrawn prior to the age of 59 &#189;.
+                However, there is an exclusion that allows a person to withdraw $10,000 from both types of IRAs
+                (including earnings for a Roth IRA) without penalty or tax for the purchase, repair, or remodeling of a
+                first home. The funds can also legally be used to purchase a home for a spouse, parents, children, or
+                grandchildren. The only caveat is that the home-buyer is only given 120 days to spend the withdrawn
+                funds, or else they are liable for paying the penalty. Spouses can each individually withdraw $10,000
+                from their respective IRAs in order to pay $20,000 towards their down payment. The $10,000 limit is a
+                lifetime limit.</p>
+            <p><b>401(k)</b>&mdash;It is possible to take out a loan for either up to $50,000, or half the value of the
+                401(k) account, whichever is less. This loan will require repayment with interest, but there will be no
+                tax or penalties on the loan amount. Interest and principal will be paid back to the 401(k) owner.
+                However, taking out a loan, especially a large one, can affect qualification for or ability to repay a
+                mortgage. Most plans only give five years to repay the loan, and borrowing a large amount can result in
+                substantial payback pressure.</p>
+
+
+        </div>
+        <div id="right">
+            <div style="padding-top:10px;  min-height:280px; text-align:center;">
+                <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+                <script>
+                    window.googletag = window.googletag || { cmd: [] };
+                    googletag.cmd.push(function () {
+                        googletag.defineSlot('/1057446/Calculator-Top-Right-Desktop', [[300, 250], [336, 280]], 'div-gpt-ad-1589567013929-0').addService(googletag.pubads());
+                        googletag.pubads().enableSingleRequest();
+                        googletag.enableServices();
+                    });
+                </script>
+                <!-- /1057446/Calculator-Top-Right-Desktop -->
+                <div id='div-gpt-ad-1589567013929-0'>
+                    <script>
+                        googletag.cmd.push(function () { googletag.display('div-gpt-ad-1589567013929-0'); });
+                    </script>
+                </div>
+            </div>
+            <table align="center" id="searchbox">
+                <form name="calcSearchForm" onsubmit="calcSearch(); return false;" autocomplete="off">
+                    <tr>
+                        <td><input type="text" name="calcSearchTerm" id="calcSearchTerm" class="inlongest"
+                                onkeyup="return calcSearch();"></td>
+                        <td><span id="bluebtn" onClick="return calcSearch();">Search</span></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div id="calcSearchOut"></div>
+                        </td>
+                    </tr>
+                </form>
+            </table>
+            <div id="othercalc">
+                <div id="octitle"><a href="/financial-calculator.html">Financial Calculators</a></div>
+                <div id="occontent"><a href="/mortgage-calculator.html">Mortgage</a><a
+                        href="/loan-calculator.html">Loan</a><a href="/auto-loan-calculator.html">Auto Loan</a><a
+                        href="/interest-calculator.html">Interest</a><a href="/payment-calculator.html">Payment</a><a
+                        href="/retirement-calculator.html">Retirement</a><a
+                        href="/amortization-calculator.html">Amortization</a><a
+                        href="/investment-calculator.html">Investment</a><a
+                        href="/currency-calculator.html">Currency</a><a
+                        href="/inflation-calculator.html">Inflation</a><a href="/finance-calculator.html">Finance</a><a
+                        href="/mortgage-payoff-calculator.html">Mortgage Payoff</a><a href="/tax-calculator.html">Income
+                        Tax</a><a href="/compound-interest-calculator.html">Compound Interest</a><a
+                        href="/salary-calculator.html">Salary</a><a href="/401k-calculator.html">401K</a><a
+                        href="/interest-rate-calculator.html">Interest Rate</a><a
+                        href="/sales-tax-calculator.html">Sales Tax</a><a href="/financial-calculator.html">More
+                        Financial Calculators</a></div>
+                <div id="ocother"><a href="/financial-calculator.html">Financial</a> | <a
+                        href="/fitness-and-health-calculator.html">Fitness and Health</a> | <a
+                        href="/math-calculator.html">Math</a> | <a href="/other-calculator.html">Other</a></div>
+            </div>
+        </div>
+    </div>
+    <div id="clear"></div>
+    <div id="footer">
+        <div id="footerin">
+            <div id="footernav"><a href="/about-us.html">about us</a> | <a href="/sitemap.html">sitemap</a> | <a
+                    href="/about-us.html#terms">terms of use</a> | <a href="/about-us.html#privacy">privacy policy</a>
+                &nbsp; &copy; 2008 - 2022 <a href="//www.calculator.net">calculator.net</a></div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-3068863-11']);
+        _gaq.push(['_trackPageview', '/down-payment-calculator.html?ccashamount1=50000&cdownpaypct1=20&cincludeclosingcost1=1&cclosingcost1=3&cclosingcostunit1=p&cinterest1=6.56&cloanterm1=30&type=1&x=84&y=5_____Section_1_IN__do']);
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+        })();
+    </script>
+    <div class="topNavAbs">
+        <a href="/financial-calculator.html" class="topNavOn">Financial</a>
+        <a href="/fitness-and-health-calculator.html">Fitness &amp; Health</a>
+        <a href="/math-calculator.html">Math</a>
+        <a href="/other-calculator.html">Other</a>
+    </div>
+</body>
+
+</html>
